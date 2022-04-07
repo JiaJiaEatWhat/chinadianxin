@@ -31,7 +31,6 @@ public class LocalFileProducer implements Producer {
     //生产数据
     public void produce() {
 
-        System.out.println("hhhhhhhhhhhhhhhh");
         //读取通讯录数据
         try {
             List<Contactor> contactors = in.read(Contactor.class);
