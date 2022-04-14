@@ -3,7 +3,11 @@ package com.jiajun.common.constant;
 import com.jiajun.common.bean.Val;
 
 public enum Names implements Val {
-    NAMESPACE("ct");
+    NAMESPACE("ct")
+    , TABLE("ct:calllog")
+    ,CF_CALLER("caller")
+    ,CF_INFO("info")
+    ,TOPIC("ct");
 
     private String name;
 
@@ -15,7 +19,7 @@ public enum Names implements Val {
         this.name = (String)val;
     }
 
-    public Object getValue() {
-        return null;
+    public String getValue() {
+        return name;
     }
 }
